@@ -78,6 +78,13 @@ function configure(config) {
       return _ref = {}, _ref[address] = (0, _cssResource._createCSSResource)(address), _ref;
     }
   });
+  viewEngine.addResourcePlugin('.scss', {
+    'fetch': function fetch(address) {
+      var _ref;
+
+      return _ref = {}, _ref[address] = (0, _cssResource._createCSSResource)(address), _ref;
+    }
+  });
 }
 
 exports.Compose = _compose.Compose;
